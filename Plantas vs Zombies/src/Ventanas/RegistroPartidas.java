@@ -10,9 +10,6 @@ import java.util.HashMap;
 import ClasesAplicacion.HashUsuarios;
 import ClasesAplicacion.Partida;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.JTableHeader;
-import javax.swing.table.TableColumn;
-import javax.swing.table.TableColumnModel;
 
 /**
  *
@@ -26,6 +23,7 @@ public class RegistroPartidas extends javax.swing.JFrame {
 
     /**
      * Creates new form RegistroPartidas
+     * @param dni
      */
     public RegistroPartidas(String dni) {
 

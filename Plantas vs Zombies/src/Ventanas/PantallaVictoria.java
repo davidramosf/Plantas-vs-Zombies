@@ -5,6 +5,7 @@
  */
 package Ventanas;
 
+import java.io.File;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
@@ -13,8 +14,9 @@ import javax.swing.JLabel;
  * @author david
  */
 public class PantallaVictoria extends javax.swing.JFrame {
-    String dni;
-    Tablerojframe tablero;
+    private final String dni;
+    private final Tablerojframe tablero;
+    private final File ruta;
     /**
      * Creates new form PantallaVictoria
      */
@@ -22,8 +24,9 @@ public class PantallaVictoria extends javax.swing.JFrame {
         initComponents();
         this.dni = dni;
         this.tablero = tj;
+        ruta = new File("victoria.png");
         JLabel victoria = new JLabel();
-        victoria.setIcon(new ImageIcon("../PL3 Ramos David y Sanchez Sergio 18-19 GSI/victoria.png"));
+        victoria.setIcon(new ImageIcon(ruta.getAbsolutePath()));
         victoria.setBounds(0, 0, 380,122);
         jLabelImagen.add(victoria);
     }

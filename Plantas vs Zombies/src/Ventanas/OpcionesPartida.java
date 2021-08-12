@@ -5,6 +5,7 @@
  */
 package Ventanas;
 
+import java.io.File;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
@@ -18,6 +19,7 @@ public class OpcionesPartida extends javax.swing.JFrame {
     /**
      * Constructor
      */
+ private final File ruta;
     public OpcionesPartida(String dni) {
         this.dni = dni;
         initComponents();
@@ -26,7 +28,8 @@ public class OpcionesPartida extends javax.swing.JFrame {
         jComboBoxColumnas.setSelectedIndex(3);
         jComboBoxDificultad.setSelectedIndex(1);
         JLabel manoZombie = new JLabel();
-        manoZombie.setIcon(new ImageIcon("../PL3 Ramos David y Sanchez Sergio 18-19 GSI/manoZombie.png"));
+        ruta = new File("manoZombie.png");
+        manoZombie.setIcon(new ImageIcon(ruta.getAbsolutePath()));
         manoZombie.setBounds(0, 0, 192, 220);
         jLabelImagen.add(manoZombie);
     }

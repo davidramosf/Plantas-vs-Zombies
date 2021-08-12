@@ -9,8 +9,6 @@ import ClasesAplicacion.HashUsuarios;
 import ClasesAplicacion.Partida;
 import ClasesAplicacion.Usuario;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 

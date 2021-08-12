@@ -5,6 +5,7 @@
  */
 package Ventanas;
 
+import java.io.File;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
@@ -17,10 +18,12 @@ public class Menu extends javax.swing.JFrame {
     /**
      * Constructor
      */
+     private final File ruta;
     public Menu() {
         initComponents();
         JLabel titulo = new JLabel();
-        titulo.setIcon(new ImageIcon("../PL3 Ramos David y Sanchez Sergio 18-19 GSI/PlantasVsZombies.png"));
+        ruta = new File("PlantasVsZombies.png");
+        titulo.setIcon(new ImageIcon(ruta.getAbsolutePath()));
         titulo.setBounds(100, 0, 251, 201);
         jLabelImagen.add(titulo);
         
